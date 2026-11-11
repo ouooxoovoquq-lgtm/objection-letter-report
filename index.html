@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>异议函 · 法律依据补位报告（外包利益最大化版）</title>
+<style>
+:root{--ink:#1A1A18;--ink-2:#3E3E39;--ink-3:#7B7B73;--paper:#FAFAF7;--sage:#6B7F6A;--amber:#9A6A1A;--cinnabar:#B03A2E;--cinnabar-soft:rgba(176,58,46,.08);--grid:#E8E5DD;--v1:#3D5A80;--v2:#2D6A4F;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Source Han Sans SC","Noto Sans CJK SC","思源黑体",PingFang SC,-apple-system,sans-serif;color:var(--ink);background:#F4F2EC;line-height:1.7;}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 32px 80px;}
+header{margin-bottom:28px;padding-bottom:20px;border-bottom:2px solid var(--ink);}
+header h1{font-size:22px;font-weight:700;letter-spacing:1px;}
+header .sub{margin-top:6px;color:var(--ink-2);font-size:13px;}
+
+.tabs{display:flex;border-bottom:1px solid var(--ink-3);position:sticky;top:0;background:#F4F2EC;z-index:10;padding-top:8px;}
+.tabs button{background:none;border:none;padding:10px 20px;font-size:14px;color:var(--ink-3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;font-family:inherit;letter-spacing:.5px;}
+.tabs button.active{color:var(--ink);border-bottom-color:var(--cinnabar);font-weight:600;}
+.panel{display:none;padding-top:24px;}
+.panel.active{display:block;}
+
+.paper{background:var(--paper);border:1px solid var(--grid);padding:48px 60px;border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+.paper .p{margin-bottom:14px;font-size:13.5px;color:var(--ink);text-align:justify;text-indent:0;line-height:1.9;}
+.paper .t{font-size:20px;font-weight:700;text-align:center;margin-bottom:20px;color:var(--ink);}
+.paper .h{font-size:15px;font-weight:700;color:var(--ink);margin-top:22px;margin-bottom:12px;border-left:3px solid var(--cinnabar);padding-left:12px;}
+.law{background:var(--cinnabar-soft);color:var(--cinnabar);padding:1px 5px;border-radius:2px;font-weight:600;border-bottom:1px dashed rgba(176,58,46,.3);}
+
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:24px;}
+.metric{background:var(--paper);border:1px solid var(--grid);border-left:4px solid var(--cinnabar);padding:18px 20px;border-radius:2px;}
+.metric .v{font-size:28px;font-weight:700;color:var(--cinnabar);line-height:1;}
+.metric .l{font-size:12px;color:var(--ink-3);margin-top:6px;}
+.metric.green{border-left-color:var(--v2);}
+.metric.green .v{color:var(--v2);}
+.metric.amber{border-left-color:var(--amber);}
+.metric.amber .v{color:var(--amber);}
+
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--grid);margin-top:16px;font-size:13px;}
+th,td{padding:11px 14px;border-bottom:1px solid var(--grid);text-align:left;vertical-align:top;}
+th{background:#F0EDE6;font-weight:600;color:var(--ink-2);font-size:12px;letter-spacing:.5px;}
+tr:last-child td{border-bottom:none;}
+td.law-name{color:var(--cinnabar);font-weight:600;white-space:nowrap;}
+td.loc{color:var(--sage);white-space:nowrap;}
+
+.patch{background:var(--paper);border:1px solid var(--grid);border-left:4px solid var(--cinnabar);margin-bottom:14px;border-radius:2px;overflow:hidden;}
+.patch .hd{background:#FDF3F1;padding:10px 16px;font-weight:600;color:var(--cinnabar);font-size:13px;letter-spacing:.5px;}
+.patch .body{padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:12.5px;}
+.patch .col{display:flex;flex-direction:column;}
+.patch .col .lbl{color:var(--ink-3);font-size:11px;margin-bottom:4px;letter-spacing:.5px;}
+.patch .col.bad{border-right:1px dashed var(--grid);padding-right:16px;}
+.patch .col.bad .txt{color:#A64235;}
+.patch .col.good .txt{color:var(--v2);}
+.patch .col.detail{grid-column:1/-1;margin-top:8px;padding-top:10px;border-top:1px dashed var(--grid);color:var(--ink-2);font-size:12px;line-height:1.7;}
+
+.slim-block{background:var(--paper);border:1px solid var(--grid);padding:20px 24px;border-radius:2px;}
+.slim-block h3{font-size:14px;color:var(--ink);margin:16px 0 8px;padding-left:10px;border-left:3px solid var(--amber);}
+.slim-block ul{padding-left:20px;font-size:13px;line-height:1.9;color:var(--ink-2);}
+.slim-block li{margin-bottom:4px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>异议函 · 法律依据补位报告</h1>
+<div class="sub">**外包利益最大化版** · 第一节恢复原文叙事 · 10 条法条补位 · 字数 1972（原 1759，变化 +12.1%）</div>
+</header>
+
+<div class="tabs">
+<button class="active" data-tab="overview">01 概览</button>
+<button data-tab="letter">02 异议函正文</button>
+<button data-tab="patches">03 补位清单</button>
+<button data-tab="slim">04 改动说明</button>
+</div>
+
+<div class="panel active" id="overview"><div class="metrics">
+<div class="metric"><div class="v">1759</div><div class="l">原异议函字数</div></div>
+<div class="metric amber"><div class="v">1972</div><div class="l">利益最大化版字数</div></div>
+<div class="metric"><div class="v">+213</div><div class="l">增加字数（+12.1%）</div></div>
+<div class="metric green"><div class="v">10</div><div class="l">法律依据条数</div></div>
+<div class="metric green"><div class="v">7</div><div class="l">补位条数</div></div>
+<div class="metric"><div class="v">7</div><div class="l">异议函章节</div></div>
+</div><table><thead><tr><th style="width:260px;">法条</th><th style="width:240px;">覆盖的主张</th><th style="width:80px;">位置</th><th>补位说明</th></tr></thead><tbody><tr><td class="law-name">《工资支付暂行规定》第12条</td><td>待岗的法定前提</td><td class="loc">第一节</td><td class="ok">原已引用</td></tr><tr><td class="law-name">《北京市工资支付规定》第27条</td><td>停工停产待遇的直接依据</td><td class="loc">第一节</td><td class="hit">补位：替换空泛的‘北京市相关规定’</td></tr><tr><td class="law-name">《民法典》第497条</td><td>格式条款不利解释原则</td><td class="loc">第二节</td><td class="hit">补位：口头外迁/书面待岗矛盾直接套</td></tr><tr><td class="law-name">《劳动合同法》第17条</td><td>岗位报酬为合同必备条款</td><td class="loc">第三节</td><td class="hit">补位：原段只有35条，加17条压对方合同条款主张</td></tr><tr><td class="law-name">《劳动合同法》第26条</td><td>排除劳动者权利的格式条款无效</td><td class="loc">第四节</td><td class="hit">补位：‘视为同意’直接无效，不用扯异议期限</td></tr><tr><td class="law-name">《劳动合同法》第29条</td><td>应积极履行劳动义务/提供劳动条件</td><td class="loc">第三节</td><td class="hit">补位：同上，与17/35条组合</td></tr><tr><td class="law-name">《劳动合同法》第30条</td><td>应提供劳动条件</td><td class="loc">第六节</td><td class="hit">补位：撤销待岗有直接法条支撑</td></tr><tr><td class="law-name">《劳动合同法》第35条</td><td>变更需协商一致并书面</td><td class="loc">第三节</td><td class="ok">原已引用</td></tr><tr><td class="law-name">《劳动合同法》第38条</td><td>未足额支付工资可解除并要补偿</td><td class="loc">第五节</td><td class="ok">原已引用</td></tr><tr><td class="law-name">《劳动争议调解仲裁法》第6条</td><td>举证责任在用人单位</td><td class="loc">第七节</td><td class="hit">补位：防止公司说‘你没证据’</td></tr></tbody></table></div>
+<div class="panel" id="letter"><div class="paper"><p class="t">对《待岗通知》的异议函</p>
+<p class="p">致：上海微创软件股份有限公司北京分公司</p>
+<p class="p">本人__________（身份证号：____________________），系贵公司__________岗位员工，劳动合同期限自____年___月___日起至____年___月___日止，工作地点为__________。</p>
+<p class="p">本人于2026年11月6日收到贵司出具的《待岗通知》，要求本人于2026年11月底从百度外包项目退项、自2026年12月1日起前往贵司本部中钢国际广场报到待岗。本人明确不同意，现提出书面异议如下：</p>
+<p class="h">一、"退项"不等于"待岗"，请贵司出示待岗的法定依据</p>
+<p class="p">退项解决的是单个外包项目结束，待岗解决的是用人单位停工停产期间暂无工作可安排，两者在法律上不是一回事。贵司不能以"百度项目退项"直接推导出"本人应当待岗"。</p>
+<p class="p">依据<span class="law">《工资支付暂行规定》第十二条</span>、<span class="law">《北京市工资支付规定》第二十七条</span>，待岗的事实前提是非因劳动者原因造成用人单位停工、停产。贵司在北京地区仍有其他业务和项目，本次退项仅涉及百度项目人员，并非贵司整体停工停产。本人认为百度项目客户业务并未实际调整，本人所从事岗位仍然存在。</p>
+<p class="p">请贵司于收到本函之日起3个工作日内，向本人出示以下材料：</p>
+<p class="p">（1）客户方出具的退项、终止外包服务或人员退回的书面通知、邮件或确认文件；</p>
+<p class="p">（2）贵司内部关于本次退项的审批文件、生效日期及涉及人员范围；</p>
+<p class="p">（3）贵司整体或本人所在业务单元停工、停产的决定文件及适用范围；</p>
+<p class="p">（4）本次待岗不具有个别针对性的说明，包括同业务线其他员工是否同步待岗；</p>
+<p class="p">（5）贵司在北京地区为本人匹配其他项目或岗位的推送、面试及沟通记录；</p>
+<p class="p">（6）贵司就退项及待岗安排与本人协商沟通的书面记录。</p>
+<p class="p">退项文件本身至多证明单个项目结束，不能替代停工停产的证明，也不能替代协商一致的证明。逾期不能提供或材料不能证明待岗法定前提成立的，本次待岗缺乏事实和法律依据。</p>
+<p class="h">二、口头外迁方案与书面待岗通知相互矛盾</p>
+<p class="p">贵司在口头会议中明确提及外迁西安或成都的安排，但《待岗通知》书面文本对此只字未提，仅以"岗位裁撤"为由要求本人回本部待岗。口头有外迁方案、书面却称岗位裁撤，该矛盾说明贵司的真实意图并非"无岗可上"，而是试图以待岗方式处理人员调配。依据<span class="law">《民法典》第四百九十七条</span>，对格式条款的理解发生争议的，应当作不利于提供格式条款一方的解释。请贵司就口头外迁方案与书面待岗通知之间的关系作出书面说明。</p>
+<p class="h">三、合同第3.2条不能支撑单方待岗</p>
+<p class="p">劳动合同第3.2条约定的是"工作地点调整"，不是"待岗"。即便两个办公地点都在北京，从客户方驻场岗位撤回公司本部、置于无具体工作内容的待岗状态，实质是对工作岗位、工作内容和劳动报酬的重大变更。依据<span class="law">《劳动合同法》第17条</span>（工作岗位、劳动报酬为劳动合同必备条款）、第29条（用人单位应依法履行劳动合同约定的义务）、第35条（变更劳动合同应当经双方协商一致并采用书面形式），该变更未经本人书面同意，双方并未协商一致。贵司第5.7条及第3.2条均不能替代停工停产的法定要件，也不能替代协商一致的程序要求。</p>
+<p class="h">四、报到声明</p>
+<p class="p">本人将于2026年12月1日按通知地址到场，但仅为等候贵司在北京地区安排同等条件新项目，不认可本人处于"待岗"状态。报到、打卡、配合面试及提交简历，均不视为对本次待岗安排或任何外迁方案的同意或追认。本函即为书面异议，不存在"到岗后一个月未提异议视为同意"之情形；该约定属于排除劳动者权利的格式条款，依据<span class="law">《劳动合同法》第二十六条</span>无效。</p>
+<p class="h">五、工资主张</p>
+<p class="p">在双方就劳动合同变更达成书面一致前，贵司应按原劳动合同约定标准足额支付工资。如贵司自2027年1月起按最低工资或待岗生活费发放，本人将认为构成未足额支付劳动报酬，并保留依据<span class="law">《劳动合同法》第三十八条</span>解除劳动合同、要求经济补偿的权利。</p>
+<p class="h">六、本人诉求</p>
+<p class="p">请贵司于收到本函之日起3个工作日内撤销本次单方待岗决定（依据<span class="law">《劳动合同法》第三十条</span>：用人单位应提供劳动条件），并书面答复；</p>
+<p class="p">自2026年12月1日起按原劳动合同标准足额支付工资；</p>
+<p class="p">在北京地区为本人匹配与原岗位（__________）职级、薪酬、工作条件相当的岗位；</p>
+<p class="p">若无法在北京提供同等条件岗位，请依据劳动合同第11.2.4条与本人协商解除劳动合同，并依法支付经济补偿；</p>
+<p class="p">双方未达成书面协议前，本人不接受待岗、跨城市调岗、降薪等任何单方变更。</p>
+<p class="h">七、工作交接与答复期限</p>
+<p class="p">本人将在退项前完成百度项目工作交接。工作交接不视为对本次待岗安排或跨城市调岗的认可。</p>
+<p class="p">请贵司于收到本函之日起3个工作日内书面答复。逾期未答复或未提供上述证据的，依据<span class="law">《劳动争议调解仲裁法》第六条</span>（举证责任在用人单位），本人将通过劳动仲裁等法律途径维护自身合法权益。</p>
+<p class="p">此致</p>
+<p class="p">上海微创软件股份有限公司北京分公司</p>
+<p class="p">回复人：____________________</p>
+<p class="p">日期：2026年___月___日</p></div></div>
+<div class="panel" id="patches"><div class="patch">
+<div class="hd">[1] 第一节法条段</div>
+<div class="body">
+<div class="col bad"><div class="lbl">补位前（漏洞）</div><div class="txt">‘北京市相关规定’空泛</div></div>
+<div class="col good"><div class="lbl">补位后（法条）</div><div class="txt">替换为《北京市工资支付规定》第二十七条</div></div>
+<div class="col detail">→ 待岗生活费直接依据，不减字不加字</div>
+</div></div><div class="patch">
+<div class="hd">[2] 第一节材料清单</div>
+<div class="body">
+<div class="col bad"><div class="lbl">补位前（漏洞）</div><div class="txt">原6条清单（我之前错误砍成3条）</div></div>
+<div class="col good"><div class="lbl">补位后（法条）</div><div class="txt">完整恢复6条：退项通知/内部审批/停工决定/非针对性说明/岗位匹配记录/协商记录</div></div>
+<div class="col detail">→ 清单越全越逼公司举证，对外包有利</div>
+</div></div><div class="patch">
+<div class="hd">[3] 第二节末</div>
+<div class="body">
+<div class="col bad"><div class="lbl">补位前（漏洞）</div><div class="txt">无法律依据支撑口头/书面矛盾</div></div>
+<div class="col good"><div class="lbl">补位后（法条）</div><div class="txt">加《民法典》第四百九十七条（格式条款不利解释）</div></div>
+<div class="col detail">→ 直接套到矛盾描述后面</div>
+</div></div><div class="patch">
+<div class="hd">[4] 第三节红字段</div>
+<div class="body">
+<div class="col bad"><div class="lbl">补位前（漏洞）</div><div class="txt">原段只有《劳动合同法》第35条（变更要协商）</div></div>
+<div class="col good"><div class="lbl">补位后（法条）</div><div class="txt">补第17条（岗位报酬是必备条款）+ 第29条（应履行劳动义务）</div></div>
+<div class="col detail">→ 3条法条压对方合同第3.2/5.7条主张</div>
+</div></div><div class="patch">
+<div class="hd">[5] 第四节末</div>
+<div class="body">
+<div class="col bad"><div class="lbl">补位前（漏洞）</div><div class="txt">‘视为同意’无法条支撑</div></div>
+<div class="col good"><div class="lbl">补位后（法条）</div><div class="txt">加《劳动合同法》第二十六条（排除劳动者权利的格式条款无效）</div></div>
+<div class="col detail">→ 不用跟公司扯异议期限，直接说约定无效</div>
+</div></div><div class="patch">
+<div class="hd">[6] 第六节诉求①</div>
+<div class="body">
+<div class="col bad"><div class="lbl">补位前（漏洞）</div><div class="txt">‘撤销待岗决定’无法条支撑</div></div>
+<div class="col good"><div class="lbl">补位后（法条）</div><div class="txt">加《劳动合同法》第三十条（公司应提供劳动条件）</div></div>
+<div class="col detail">→ 放在括号里，不减字</div>
+</div></div><div class="patch">
+<div class="hd">[7] 第七节末</div>
+<div class="body">
+<div class="col bad"><div class="lbl">补位前（漏洞）</div><div class="txt">仅说‘通过劳动仲裁维护权益’</div></div>
+<div class="col good"><div class="lbl">补位后（法条）</div><div class="txt">加《劳动争议调解仲裁法》第六条（举证责任在用人单位）</div></div>
+<div class="col detail">→ 防止公司事后甩锅</div>
+</div></div></div>
+
+<div class="panel" id="slim">
+<div class="slim-block">
+<h3>改动原则（外包利益最大化）</h3>
+<ul>
+<li>**尽量保留原文**：第一节"退项≠待岗"完整恢复原文叙事+6条材料清单，之前误砍的 349 字全部恢复</li>
+<li>**每条主张都有法条**：原引用 2 条 → 补位后 10 条，每条补位都对应一个明确的漏洞</li>
+<li>**清单越全越逼公司举证**：材料清单 6 条全部保留，不做精简（之前错误砍成 3 条，对外包不利）</li>
+<li>**关键结论句不动**："本次待岗缺乏事实和法律依据"等结论性语言完整保留</li>
+</ul>
+<h3>具体改动（7 处补位）</h3>
+<ul>
+<li><b>[1] 第一节法条段</b>：补位前『‘北京市相关规定’空泛…』→ 补位后『替换为《北京市工资支付规定》第二十七条…』——待岗生活费直接依据，不减字不加字</li><li><b>[2] 第一节材料清单</b>：补位前『原6条清单（我之前错误砍成3条）…』→ 补位后『完整恢复6条：退项通知/内部审批/停工决定/非针对性说明/岗…』——清单越全越逼公司举证，对外包有利</li><li><b>[3] 第二节末</b>：补位前『无法律依据支撑口头/书面矛盾…』→ 补位后『加《民法典》第四百九十七条（格式条款不利解释）…』——直接套到矛盾描述后面</li><li><b>[4] 第三节红字段</b>：补位前『原段只有《劳动合同法》第35条（变更要协商）…』→ 补位后『补第17条（岗位报酬是必备条款）+ 第29条（应履行劳动义务…』——3条法条压对方合同第3.2/5.7条主张</li><li><b>[5] 第四节末</b>：补位前『‘视为同意’无法条支撑…』→ 补位后『加《劳动合同法》第二十六条（排除劳动者权利的格式条款无效）…』——不用跟公司扯异议期限，直接说约定无效</li><li><b>[6] 第六节诉求①</b>：补位前『‘撤销待岗决定’无法条支撑…』→ 补位后『加《劳动合同法》第三十条（公司应提供劳动条件）…』——放在括号里，不减字</li><li><b>[7] 第七节末</b>：补位前『仅说‘通过劳动仲裁维护权益’…』→ 补位后『加《劳动争议调解仲裁法》第六条（举证责任在用人单位）…』——防止公司事后甩锅</li>
+</ul>
+<h3>字数变化</h3>
+<ul>
+<li>原异议函：<b>1759</b> 字（7 章）</li>
+<li>利益最大化版：<b>1972</b> 字（7 章，结构不变）</li>
+<li>增加 <b>+213</b> 字，变化率 <b>+12.1%</b></li>
+<li>增加的 213 字**全是法条补位**，无任何废话</li>
+</ul>
+</div>
+</div>
+
+</div>
+<script>
+const btns = document.querySelectorAll('.tabs button');
+const panels = document.querySelectorAll('.panel');
+btns.forEach(b => b.addEventListener('click', () => {
+  btns.forEach(x => x.classList.remove('active'));
+  panels.forEach(x => x.classList.remove('active'));
+  b.classList.add('active');
+  document.getElementById(b.dataset.tab).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}));
+</script>
+</body>
+</html>
